@@ -1,0 +1,24 @@
+{
+  "name": "playwright_automationframework_bench",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "chromeHeaded": "npx playwright test --headed --grep @Web --project=chrome",
+    "firefoxHeaded": "npx playwright test --headed --grep @Web --project=firefox",
+    "safariHeaded": "npx playwright test --headed --grep @Web --project=safari",
+    "allWebHeaded": "npx playwright test --headed --grep @Web",
+    "mobileChrome": "npx playwright test --config playwrightMobile.config.js --headed --grep @Mobile --project=mobileChrome",
+    "mobileSafari": "npx playwright test --config playwrightMobile.config.js --headed --grep @Mobile --project=mobileSafari",
+    "mobileAll": "npx playwright test --headed --grep @Mobile --config playwrightMobile.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.21.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1"
+  }
+}
